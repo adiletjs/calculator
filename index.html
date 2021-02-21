@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/85f73f2274.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="calculator">
+    <div class="calculator__header">
+        <input placeholder="0" type="text" class="input"  readonly>
+
+        <input placeholder="0" type="text" class="result"  readonly>
+    </div>
+    <div class="main">
+        <button class="btn large" onclick="reset()">C</button>
+        <button class="btn large" onclick="backspace()"><i class="fas fa-backspace"></i></button>
+        <button class="btn" onclick="input('7')">7</button>
+        <button class="btn" onclick="input('8')">8</button>
+        <button class="btn" onclick="input('9')">9</button>
+        <button class="btn" onclick="input('4')">4</button>
+        <button class="btn" onclick="input('5')">5</button>
+        <button class="btn" onclick="input('6')">6</button>
+        <button class="btn" onclick="input('1')">1</button>
+        <button class="btn" onclick="input('2')">2</button>
+        <button class="btn" onclick="input('3')">3</button>
+        <button class="btn orange" onclick="input('0')">0</button>
+
+        <button class="btn orange" onclick="input('+')">+</button>
+        <button class="btn orange" onclick="input('-')">-</button>
+        <button class="btn orange" onclick="input('*')">x</button>
+        <button class="btn orange" onclick="input('/')">/</button>
+        <button class="btn orange" onclick="calculate()">=</button>
+
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
